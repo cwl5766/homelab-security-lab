@@ -1,0 +1,8 @@
+# Secrets and local files that must never be committed
+*.key
+*.pem
+.env
+*.env
+secrets/
+*.kdbx
+*.json.bak
