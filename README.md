@@ -96,3 +96,7 @@ vmbr1 has no physical port, no IP on the host and no gateway, so nothing on the 
 | [configs/](configs/) | Sanitized configs and scripts |
 
 Addresses, account names and anything identifying have been replaced with placeholders. No credentials are stored here.
+
+## About me
+
+I'm Christian Liu, an MS in Information Technology and Management student at UT Dallas working toward a career in cybersecurity (identity and access management, GRC, and security operations). This lab is where I practice. Connect with me on [LinkedIn](https://www.linkedin.com/in/christian-liu-551038220).
