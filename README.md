@@ -99,4 +99,4 @@ Network addresses, account names and other details that identify the home networ
 
 ## About me
 
-I'm Christian Liu, an MS in Information Technology and Management student at UT Dallas working toward a career in cybersecurity (identity and access management, GRC, and security operations). This lab is where I practice and learn more about cybersecurity. Let's connect on [LinkedIn](https://www.linkedin.com/in/christian-liu-551038220).
+I'm Christian Liu, an MS in Information Technology and Management student at UT Dallas working toward a career in cybersecurity (identity and access management, GRC, and security operations). This lab is where I practice and keep learning. Let's connect on [LinkedIn](https://www.linkedin.com/in/christian-liu-551038220).
