@@ -1,6 +1,6 @@
 # Lessons learned
 
-Every lesson here cost real time at least once. Each one has a one line summary, then three short parts:
+Every lesson here comes from something that actually happened in this lab, and each one cost real time at least once. Decisions made for parts that are not built yet live in [design decisions](design-decisions.md) until they are tested for real. Each one has a one line summary, then three short parts:
 
 * **What happened:** the situation in this lab.
 * **Why it matters:** the concept behind it, explained without assuming background knowledge.
@@ -244,14 +244,6 @@ Every lesson here cost real time at least once. Each one has a one line summary,
 
 **What to do:** Use a DHCP reservation or a static IP for internal addresses. Dynamic DNS is only needed if you expose something to the internet, which this lab deliberately doesn't.
 
-### Use `.test` for a lab domain, never `.local`
-
-**What happened:** The Active Directory domain was originally planned as `lab.local`.
-
-**Why it matters:** `.local` is reserved for automatic device discovery on home networks (mDNS, the thing that finds printers and Apple devices). Using it for a real domain causes intermittent name lookup failures. `.test` is officially reserved for testing.
-
-**What to do:** Name lab domains something like `ad.test`.
-
 ### A bridge with no ports, no IP and no gateway is a true air gap
 
 **What happened:** The lab network (vmbr1) was built as a virtual switch connected to nothing outside the server.
@@ -259,18 +251,6 @@ Every lesson here cost real time at least once. Each one has a one line summary,
 **Why it matters:** With no physical port, no address on the host and no gateway, there is no path from the lab to the internet or the family network. Attack tools and vulnerable machines can't leak out.
 
 **What to do:** Prove it rather than assume it: ping between lab VMs (should work), ping the internet from a lab VM (should fail), and watch the traffic with `tcpdump`.
-
-### Keep the air gap closed when bringing in files
-
-**What happened:** The plan for getting tools onto the air gapped domain controller was reviewed.
-
-**Why it matters:** Temporarily moving a lab VM onto the home network breaks the isolation that makes the lab safe, even for a few minutes.
-
-**What to do:** Package the files into a small ISO image and attach it to the VM like a CD. The lab never touches another network.
-
----
-
-## Applications
 
 ### Nextcloud AIO needs a real domain with a valid certificate
 

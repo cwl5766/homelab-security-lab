@@ -90,7 +90,7 @@ vmbr1 has no physical port, no IP on the host and no gateway, so nothing on the 
 
 | Folder | Contents |
 | --- | --- |
-| [docs/](docs/) | How each part was built, and lessons learned |
+| [docs/](docs/) | [Lessons learned](docs/lessons-learned.md) from what's been built, and [design decisions](docs/design-decisions.md) for what's planned |
 | [incidents/](incidents/) | Troubleshooting writeups: symptom, diagnosis, root cause, fix, prevention |
 | [detections/](detections/) | Attacks run from Kali and how they showed up in the logs (coming with the SIEM) |
 | [configs/](configs/) | Sanitized configs and scripts |
